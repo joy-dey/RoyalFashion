@@ -1,0 +1,150 @@
+extend ../template/boilerplate
+block main
+    section.product-details-section.py-4
+        .container
+            article.card
+                .card-body
+                    .row
+                        .col-md-5.border.mx-0.mx-md-2
+                            figure
+                                .image-wrapper.text-center
+                                    img.img-fluid.preview-image-holder(src="assets/img/1.jpg", alt="")
+                                .preview-wrapper
+                                    ul.list-unstyled.list-inline.text-center
+                                        li.list-inline-item
+                                            img.img-fluid.border.img-sm.rounded.to-preview(src="assets/img/1.jpg", alt="")
+                                        li.list-inline-item
+                                            img.img-fluid.border.img-sm.rounded.to-preview(src="assets/img/2.jpg", alt="")
+                                        li.list-inline-item
+                                            img.img-fluid.border.img-sm.rounded.to-preview(src="assets/img/3.jpg", alt="")
+                        .col-md-6.p-3.border-bottom
+                            h2.title Tripr Half Sleeve T-Shirt
+                            .rating-wrapper.d-flex.align-items-center.mb-2
+                                ul.list-unstyled.list-inline.rating-bar.mb-0.me-3
+                                    li.list-inline-item
+                                        i.mdi.mdi-star
+                                    li.list-inline-item
+                                        i.mdi.mdi-star
+                                    li.list-inline-item
+                                        i.mdi.mdi-star
+                                    li.list-inline-item
+                                        i.mdi.mdi-star
+                                    li.list-inline-item
+                                        i.mdi.mdi-star
+                                
+                                small.text-muted 12 Reviews
+                                small.text-success.ms-2
+                                    i.mdi.mdi-clipboard-check.me-1
+                                    |25 Orders
+                            .price-wrapper.d-flex.align-items-center.mb-3
+                                var.price.h4.font-normal.mb-0.me-2 ₹499
+                                small.text-muted *Price including GST
+                            button.btn.btn-outline-success.btn-sm#share-button
+                                i.mdi.mdi-whatsapp.me-1
+                                | Share on WhatsApp
+                            
+                            .product-description.mt-3
+                                small.text-muted Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veritatis nulla labore ullam quisquam assumenda mollitia asperiores repellat, voluptatibus non ducimus maiores fuga optio nihil, esse temporibus, tempore beatae velit totam! Nisi quae veniam laudantium neque reprehenderit labore eum ullam.
+                                h6.mt-3 Short Description
+                                ul.short-description.text-muted.ps-3
+                                    li.small Made in India
+                                    li.small 100% Cotton
+                                    li.small Comfortable in Summer
+                                    li.small Machine Washable
+                                .form-group.size-chart
+                                    label.text-muted.small Available Sizes 
+                                    .button-group.mt-2
+                                        input.btn-check#s(type="radio", name="size")
+                                        label.btn.btn-outline-secondary.btn-sm(for="s") S
+
+                                        input.btn-check#m(type="radio", name="size")
+                                        label.btn.btn-outline-secondary.btn-sm(for="m") M
+
+                                        input.btn-check#l(type="radio", name="size")
+                                        label.btn.btn-outline-secondary.btn-sm(for="l") L
+
+                                        input.btn-check#xl(type="radio", name="size")
+                                        label.btn.btn-outline-secondary.btn-sm(for="xl") XL
+
+                                        input.btn-check#xxl(type="radio", name="size")
+                                        label.btn.btn-outline-secondary.btn-sm(for="xxl") XXL
+                                    .cta-holder.mt-3.row
+                                        .col-12.mb-3
+                                            .counter.input-group
+                                                button.sub.btn.btn-light.border -
+                                                input.form-control(type="text", name="", value="1")
+                                                button.add.btn.btn-light.border +
+                                        .col-12
+                                            button.btn.btn-primary Buy Now
+                                            button.btn.btn-light.border
+                                                |Add to Cart
+                                                i.mdi.mdi-cart.ms-2
+
+                        .col-md-5.d-none.d-md-block
+                        .col-md-6.p-3
+                            h5 Ratings &amp; Reviews
+                            .row.border-bottom.pb-3
+                                .col-6
+                                    .rating-showcase.d-flex.align-items-start.mt-3.flex-column.justify-content-start
+                                        h2.me-2
+                                            span.badge.bg-success
+                                                | 4
+                                                i.mdi.mdi-star.ms-1
+                                        small.text-muted
+                                            span.me-1 26 Ratings
+                                            | &amp;
+                                            span.ms-1 12 Reviews
+                                .col-6.d-flex.align-self-center.justify-content-end
+                                    button.btn.btn-light.border.btn-sm(data-bs-toggle='modal', data-bs-target='#ratingModal') Rate Product  
+
+                            .reviews-holder.mt-4
+                                ul.list-unstyled
+                                    li.border-bottom    
+                                        p
+                                            span.badge.bg-success
+                                                | 5
+                                                i.mdi.mdi-star
+                                            span.ms-2 Superb Cloth! Thanks Royal Fashion
+                                        
+                                        p.small.text-muted Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium id aliquid quo. A repudiandae in cumque repellendus eum fuga dolorem velit! Dolorem voluptatibus minima pariatur repudiandae voluptatem illo saepe nobis atque sapiente molestias necessitatibus doloribus totam, magni suscipit dicta corrupti ad consequuntur praesentium inventore iusto eius iste soluta. Quo nisi cupiditate vitae obcaecati quia, corrupti hic culpa voluptatibus? Aliquam eos iste, ex quisquam, quod reprehenderit, quia architecto voluptates cumque facilis assumenda vero doloribus placeat! Et consequatur sed quos est.
+                                        .review-image-holder
+                                            img.img-fluid.img-sm.border.border-secondary(src="assets/img/2.jpg", alt="")
+                                        .reviewer-details.mt-2
+                                            p.text-muted
+                                                small.name.me-2 Joy Dey
+                                                i.mdi.mdi-check-circle.me-1
+                                                small Certified Buyer
+
+
+    #ratingModal.modal.fade(tabindex='-1' aria-labelledby='Rating' aria-hidden='true')
+        .modal-dialog.modal-dialog-scrollable.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h5#exampleModalLabel.modal-title Rate this product
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .form-group.mb-3
+                        label.text-muted.d-block How was the product?
+                        select.form-select.mt-2(name="") 
+                            optgroup(label="Tell us about the product")
+                                option(value="5") Excellent
+                                option(value="4") Loved it
+                                option(value="3") Pretty Good
+                                option(value="2") Could be better
+                                option(value="1") Not Comfortable
+                    
+                    .form-group
+                        label.text-muted(for="review-description") Description
+                        textarea#review-description.form-control.mt-2(name="", cols="30", rows="5") 
+                    
+                    .form-group.mt-3
+                        label.text-muted Title (Optional)
+                        input.form-control.mt-2(type="text", name="")
+
+                    .form-group.mt-3
+                        label.text-muted Attach Images
+                        input.form-control.mt-2(type="file", name="")
+
+                .modal-footer
+                    button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                    button.btn.btn-primary(type='button') Submit

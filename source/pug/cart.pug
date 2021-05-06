@@ -1,0 +1,107 @@
+extend ../template/boilerplate
+block main
+    section.cart-section.py-4
+        .container
+            .row
+                .col-md-9.mb-3
+                    .card.cart-items-holder
+                        .card-body
+                            header.border-bottom.py-3
+                                .row
+                                    .col-12.col-md-6.align-self-center.mb-2
+                                        p.my-0
+                                            | My Cart 
+                                            span (2)
+                                    .col-12.col-md-6.col-lg-6.d-flex.align-items-center
+                                        label.me-3.text-nowrap.text-muted(for="addressSelect")
+                                            i.mdi.mdi-map-marker.me-1                         
+                                            | Deliver to               
+                                        select.form-select#addressSelect(name="addressSelect")
+                                            optgroup(label="Select an Address")
+                                                option(value="primary") Primary Address
+                                                option(value="work") Work Address
+                            .cart-items-list.pb-3.pt-2.mt-0
+                                .row.cart-item.border-bottom.py-3
+                                    .col-md-6.mb-3.mb-md-0
+                                        figure.d-flex.mb-0
+                                            .aside
+                                                img.img-fluid.img-sm.border(src="assets/img/1.jpg", alt="")
+                                            figcaption.ps-3
+                                                a.d-block.text-decoration-none.text-dark.h5.fw-normal(href="productdetails.html", title="Tripr Half Sleeve T-Shirt") Tripr Half Sleeve T-Shirt
+                                                strong.price ₹499
+                                                .actions
+                                                    a.text-decoration-none.text-primary(href="#") Save for Later
+                                                    a.text-decoration-none.text-danger.ms-2(href="#") Delete
+                                    .col.d-flex.justify-content-end.align-items-center
+                                        .counter.input-group
+                                            button.sub.btn.btn-light.border -
+                                            input.form-control(type="text", name="", value="1")
+                                            button.add.btn.btn-light.border +
+                                .row.cart-item.border-bottom.py-3
+                                    .col-md-6.mb-3.mb-md-0
+                                        figure.d-flex.mb-0
+                                            .aside
+                                                img.img-fluid.img-sm.border(src="assets/img/2.jpg", alt="")
+                                            figcaption.ps-3
+                                                a.d-block.text-decoration-none.text-dark.h5.fw-normal(href="productdetails.html", title="Tripr Half Sleeve T-Shirt") Tripr Half Sleeve T-Shirt
+                                                strong.price ₹499
+                                                .actions
+                                                    a.text-decoration-none.text-primary(href="#") Save for Later
+                                                    a.text-decoration-none.text-danger.ms-2(href="#") Delete
+                                    .col.d-flex.justify-content-end.align-items-center
+                                        .counter.input-group
+                                            button.sub.btn.btn-light.border -
+                                            input.form-control(type="text", name="", value="1")
+                                            button.add.btn.btn-light.border +
+                            .card-footer.bg-white
+                                .row
+                                    .col-6
+                                        button.btn.btn-light.border
+                                            i.mdi.mdi-chevron-left.me-2
+                                            | Continue
+                                    .col-6.d-flex.justify-content-end
+                                        button.btn.btn-primary
+                                            | Purchase
+                                            i.mdi.mdi-chevron-right.ms-2
+                            
+                    .alert.alert-success.my-3
+                        i.mdi.mdi-truck.me-2
+                        | Delivery within 1-2 working days
+                                    
+                .col-md-3
+                    .card.coupon-card.mb-3
+                        .card-body
+                            form#couponForm(action="") 
+                                .form-group.pb-2
+                                    label.text-muted(for="coupon") Have a Coupon?
+                                    .input-group.mt-2
+                                        input.form-control(type="text", placeholder="Coupon Code")
+                                        button.btn.btn-primary Apply
+                    
+                    .card.total-card
+                        .card-header.bg-white
+                            p.text-uppercase.mb-0 price details
+                        .card-body
+                            dl.datalist.d-flex.justify-content-between.mb-0
+                                dt Total Price:
+                                dd ₹499
+                            dl.datalist.d-flex.justify-content-between.mb-0
+                                dt Discount:
+                                dd.text-success ₹50
+                            dl.datalist.d-flex.justify-content-between.mb-0
+                                dt Delivery Charge:
+                                dd ₹50
+                        .card-footer.bg-white
+                            dl.datalist.d-flex.justify-content-between.mb-0
+                                dt Total:
+                                dd
+                                    strong ₹549
+    
+    section.payment-policy.py-4.border-top
+        .container
+            h6 Payment &amp; Refund Policy
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eligendi, maiores aspernatur distinctio excepturi quia ex qui vero. Velit, aperiam ullam. Accusamus aliquid sint dolorem, reiciendis consequatur facilis hic officia.
+            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, nihil iure? Illum consequatur, amet soluta iure mollitia fugit inventore modi earum officia porro repellendus alias minima incidunt voluptas, veritatis nihil voluptatibus. Corrupti, enim atque consectetur non eaque accusamus autem.
+                                            
+                                            
+                                        

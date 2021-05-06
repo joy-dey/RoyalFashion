@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joy Dey">
+    <title>Royal Fashion</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/materialdesignicons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <header class="bg-white navigation-block pt-3">
+      <div class="container-fluid">
+        <div class="row align-items-center border-bottom pb-3">
+          <div class="col-xl-2 col-lg-3 col-md-12 mb-3 mb-lg-0"><a href="index.html"> <img class="img-fluid" src="assets/img/logo.png" alt="brand logo"></a></div>
+          <div class="col-xl-7 col-lg-6 col-md-6 mb-3 mb-lg-0">
+            <form id="search" action=""> 
+              <div class="input-group w-100">
+                <input class="form-control" type="search" name="searchedItem" placeholder="What are you looking for...">
+                <button class="btn btn-primary" type="submit"> <i class="mdi mdi-magnify"> </i></button>
+              </div>
+            </form>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <ul class="list-unstyled widgets d-flex justify-content-evenly w-100 mb-0">
+              <li class="list-inline-item me-3"><a class="text-decoration-none d-flex flex-column align-items-center text-secondary" href="profile.html"><i class="mdi mdi-account widget-icon"></i><small>Profile</small></a></li>
+              <li class="list-inline-item me-3"><a class="text-decoration-none d-flex flex-column align-items-center text-secondary" href="profile.html"><i class="mdi mdi-heart widget-icon"></i><small>Wishlist</small></a></li>
+              <li class="list-inline-item me-3"><a class="text-decoration-none d-flex flex-column align-items-center text-secondary" href="profile.html"><i class="mdi mdi-store widget-icon"></i><small>Order</small></a></li>
+              <li class="list-inline-item me-3 position-relative"><a class="text-decoration-none d-flex flex-column align-items-center text-secondary" href="cart.html"><i class="mdi mdi-cart widget-icon"></i><small>Cart</small></a><small class="badge bg-danger position-absolute top-0 right-0">5</small></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-holder border-bottom">
+        <div class="container-fluid">
+          <ul class="list-unstyled list-inline my-2">
+            <li class="p-2"> <a class="text-decoration-none text-secondary" href="login.html">Login Page</a></li>
+            <li class="p-2"> <a class="text-decoration-none text-secondary" href="signup.html">Signup Page</a></li>
+            <li class="p-2"> <a class="text-decoration-none text-secondary" href="allcategory.html">All Category Page</a></li>
+            <li class="p-2"> <a class="text-decoration-none text-secondary" href="searchresults.html">Search Page</a></li>
+            <li class="p-2"> <a class="text-decoration-none text-secondary" href="productdetails.html">Product Detail Page</a></li>
+            <li class="p-2"> <a class="text-decoration-none text-secondary" href="cart.html">Cart Page</a></li>
+            <li class="p-2"> <a class="text-decoration-none text-secondary" href="profile.html">Profile Page</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="product-details-section py-4">
+      <div class="container">
+        <article class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-5 border mx-0 mx-md-2">
+                <figure>
+                  <div class="image-wrapper text-center"><img class="img-fluid preview-image-holder" src="assets/img/1.jpg" alt=""></div>
+                  <div class="preview-wrapper">
+                    <ul class="list-unstyled list-inline text-center">
+                      <li class="list-inline-item"><img class="img-fluid border img-sm rounded to-preview" src="assets/img/1.jpg" alt=""></li>
+                      <li class="list-inline-item"><img class="img-fluid border img-sm rounded to-preview" src="assets/img/2.jpg" alt=""></li>
+                      <li class="list-inline-item"><img class="img-fluid border img-sm rounded to-preview" src="assets/img/3.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                </figure>
+              </div>
+              <div class="col-md-6 p-3 border-bottom">
+                <h2 class="title">Tripr Half Sleeve T-Shirt</h2>
+                <div class="rating-wrapper d-flex align-items-center mb-2">
+                  <ul class="list-unstyled list-inline rating-bar mb-0 me-3">
+                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                  </ul><small class="text-muted">12 Reviews</small><small class="text-success ms-2"><i class="mdi mdi-clipboard-check me-1"></i>25 Orders</small>
+                </div>
+                <div class="price-wrapper d-flex align-items-center mb-3">
+                  <var class="price h4 font-normal mb-0 me-2">₹499</var><small class="text-muted">*Price including GST</small>
+                </div>
+                <button class="btn btn-outline-success btn-sm" id="share-button"><i class="mdi mdi-whatsapp me-1"></i>Share on WhatsApp</button>
+                <div class="product-description mt-3"><small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veritatis nulla labore ullam quisquam assumenda mollitia asperiores repellat, voluptatibus non ducimus maiores fuga optio nihil, esse temporibus, tempore beatae velit totam! Nisi quae veniam laudantium neque reprehenderit labore eum ullam.</small>
+                  <h6 class="mt-3">Short Description</h6>
+                  <ul class="short-description text-muted ps-3">
+                    <li class="small">Made in India</li>
+                    <li class="small">100% Cotton</li>
+                    <li class="small">Comfortable in Summer</li>
+                    <li class="small">Machine Washable</li>
+                  </ul>
+                  <div class="form-group size-chart">
+                    <label class="text-muted small">Available Sizes </label>
+                    <div class="button-group mt-2">
+                      <input class="btn-check" id="s" type="radio" name="size">
+                      <label class="btn btn-outline-secondary btn-sm" for="s">S</label>
+                      <input class="btn-check" id="m" type="radio" name="size">
+                      <label class="btn btn-outline-secondary btn-sm" for="m">M</label>
+                      <input class="btn-check" id="l" type="radio" name="size">
+                      <label class="btn btn-outline-secondary btn-sm" for="l">L</label>
+                      <input class="btn-check" id="xl" type="radio" name="size">
+                      <label class="btn btn-outline-secondary btn-sm" for="xl">XL</label>
+                      <input class="btn-check" id="xxl" type="radio" name="size">
+                      <label class="btn btn-outline-secondary btn-sm" for="xxl">XXL</label>
+                    </div>
+                    <div class="cta-holder mt-3 row">
+                      <div class="col-12 mb-3">
+                        <div class="counter input-group">
+                          <button class="sub btn btn-light border">-</button>
+                          <input class="form-control" type="text" name="" value="1">
+                          <button class="add btn btn-light border">+</button>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-light border">Add to Cart<i class="mdi mdi-cart ms-2"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 d-none d-md-block"></div>
+              <div class="col-md-6 p-3">
+                <h5>Ratings &amp; Reviews</h5>
+                <div class="row border-bottom pb-3">
+                  <div class="col-6">
+                    <div class="rating-showcase d-flex align-items-start mt-3 flex-column justify-content-start">
+                      <h2 class="me-2"><span class="badge bg-success">4<i class="mdi mdi-star ms-1"></i></span></h2><small class="text-muted"><span class="me-1">26 Ratings</span>&amp;<span class="ms-1">12 Reviews</span></small>
+                    </div>
+                  </div>
+                  <div class="col-6 d-flex align-self-center justify-content-end">
+                    <button class="btn btn-light border btn-sm" data-bs-toggle="modal" data-bs-target="#ratingModal">Rate Product  </button>
+                  </div>
+                </div>
+                <div class="reviews-holder mt-4">
+                  <ul class="list-unstyled">
+                    <li class="border-bottom">   
+                      <p><span class="badge bg-success">5<i class="mdi mdi-star"></i></span><span class="ms-2">Superb Cloth! Thanks Royal Fashion</span></p>
+                      <p class="small text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium id aliquid quo. A repudiandae in cumque repellendus eum fuga dolorem velit! Dolorem voluptatibus minima pariatur repudiandae voluptatem illo saepe nobis atque sapiente molestias necessitatibus doloribus totam, magni suscipit dicta corrupti ad consequuntur praesentium inventore iusto eius iste soluta. Quo nisi cupiditate vitae obcaecati quia, corrupti hic culpa voluptatibus? Aliquam eos iste, ex quisquam, quod reprehenderit, quia architecto voluptates cumque facilis assumenda vero doloribus placeat! Et consequatur sed quos est.</p>
+                      <div class="review-image-holder"><img class="img-fluid img-sm border border-secondary" src="assets/img/2.jpg" alt=""></div>
+                      <div class="reviewer-details mt-2">
+                        <p class="text-muted"><small class="name me-2">Joy Dey</small><i class="mdi mdi-check-circle me-1"></i><small>Certified Buyer</small></p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="modal fade" id="ratingModal" tabindex="-1" aria-labelledby="Rating" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Rate this product</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group mb-3">
+              <label class="text-muted d-block">How was the product?</label>
+              <select class="form-select mt-2" name=""> 
+                <optgroup label="Tell us about the product">
+                  <option value="5">Excellent</option>
+                  <option value="4">Loved it</option>
+                  <option value="3">Pretty Good</option>
+                  <option value="2">Could be better</option>
+                  <option value="1">Not Comfortable</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="text-muted" for="review-description">Description</label>
+              <textarea class="form-control mt-2" id="review-description" name="" cols="30" rows="5"> </textarea>
+            </div>
+            <div class="form-group mt-3">
+              <label class="text-muted">Title (Optional)</label>
+              <input class="form-control mt-2" type="text" name="">
+            </div>
+            <div class="form-group mt-3">
+              <label class="text-muted">Attach Images</label>
+              <input class="form-control mt-2" type="file" name="">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section-footer border-top bg">
+      <div class="container">
+        <section class="footer-top py-4">
+          <div class="row">
+            <aside class="col-md col-6">
+              <h6 class="title">Brands</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-decoration-none text-dark" href="#">Adidas</a></li>
+                <li><a class="text-decoration-none text-dark" href="#">Puma</a></li>
+                <li><a class="text-decoration-none text-dark" href="#">Reebok</a></li>
+                <li><a class="text-decoration-none text-dark" href="#">Nike</a></li>
+              </ul>
+            </aside>
+            <aside class="col-md col-6">
+              <h6 class="title">Company</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-decoration-none text-dark" href="#">About us</a></li>
+                <li><a class="text-decoration-none text-dark" href="#">Career</a></li>
+                <li><a class="text-decoration-none text-dark" href="#">Find a store</a></li>
+                <li><a class="text-decoration-none text-dark" href="#">Rules and terms</a></li>
+                <li><a class="text-decoration-none text-dark" href="#">Sitemap</a></li>
+              </ul>
+            </aside>
+            <aside class="col-md col-6">
+              <h6 class="title">Help</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-decoration-none text-dark" href="#">Contact us</a></li>
+                <li><a class="text-decoration-none text-dark" href="#">Money refund</a></li>
+                <li><a class="text-decoration-none text-dark" href="#">Order status</a></li>
+                <li><a class="text-decoration-none text-dark" href="#">Shipping info</a></li>
+                <li><a class="text-decoration-none text-dark" href="#">Open dispute</a></li>
+              </ul>
+            </aside>
+            <aside class="col-md col-6">
+              <h6 class="title">Account</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-decoration-none text-dark" href="#"> User Login </a></li>
+                <li><a class="text-decoration-none text-dark" href="#"> User register </a></li>
+                <li><a class="text-decoration-none text-dark" href="#"> Account Setting </a></li>
+                <li><a class="text-decoration-none text-dark" href="#"> My Orders </a></li>
+              </ul>
+            </aside>
+            <aside class="col-md">
+              <h6 class="title">Social</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-decoration-none text-dark" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a class="text-decoration-none text-dark" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a class="text-decoration-none text-dark" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a class="text-decoration-none text-dark" href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+        <section class="py-3 row">
+          <div class="col-md-2">
+            <p class="text-muted"> &copy; 2021 Software World</p>
+          </div>
+          <div class="col-md-10 text-md-center"><span class="px-2">support@softwareworld.co.in</span><span class="px-2">+879-332-9375</span><span class="px-2">Radhanagar, Agartala, Tripura</span></div>
+        </section>
+      </div>
+    </footer>
+  </body>
+  <script src="assets/bootstrap/js/bootstrap.min.js"> </script>
+  <script src="assets/js/main.js"> </script>
+</html>

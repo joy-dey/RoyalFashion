@@ -1,0 +1,23 @@
+mixin generateUserWidgets(name,url,icon,badge)
+    if badge
+        li.list-inline-item.me-3.position-relative
+            a.text-decoration-none.d-flex.flex-column.align-items-center.text-secondary(href=`${url}`)
+                i(class=`mdi ${icon} widget-icon`)
+                small #{name}
+            small.badge.bg-danger.position-absolute.top-0.right-0 #{badge}
+    else
+        li.list-inline-item.me-3
+            a.text-decoration-none.d-flex.flex-column.align-items-center.text-secondary(href=`${url}`)
+                i(class=`mdi ${icon} widget-icon`)
+                small #{name}
+
+mixin generateAccountNav(name,target, url, type)
+    if target
+        li.list-group-item.cursor-pointer(data-target=`#${target}`) #{name}
+    else
+        li.list-group-item.cursor-pointer
+            a.text-decoration-none.text-dark(href=`${url}`) #{name}
+
+mixin generateScrollingNav(name, url)
+    li.p-2 
+        a.text-decoration-none.text-secondary(href=`${url}`) #{name}

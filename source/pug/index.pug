@@ -1,0 +1,68 @@
+extend ../template/boilerplate
+block main
+    section.mainPage.py-4
+        .container
+            #mainSlider.carousel.slide(data-bs-ride='carousel')
+                .carousel-inner
+                    .carousel-item.active
+                        img.d-block.w-100(src='assets/img/banner.jpg' alt='...')
+                    .carousel-item
+                        img.d-block.w-100(src='assets/img/banner.jpg' alt='...')
+                    .carousel-item
+                        img.d-block.w-100(src='assets/img/banner.jpg' alt='...')
+                button.carousel-control-prev(type='button' data-bs-target='#mainSlider' data-bs-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.visually-hidden Previous
+                button.carousel-control-next(type='button' data-bs-target='#mainSlider' data-bs-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.visually-hidden Next
+            
+            section.main-section.pb-4.pt-5
+                header.section-heading.d-flex.justify-content-between.align-items-center.border-bottom.pb-2
+                    h5 Popular Products
+                    button.btn.btn-sm.btn-outline-primary.text-capitalize view all
+                .row.mt-3
+                    .item.col-md-3.mb-3
+                        .card
+                            img(src="assets/img/2.jpg", alt="").card-img-top
+                            .card-body
+                                a(href="productdetails.html").text-dark.d-block.text-decoration-none.text-truncate Name of Product Shown here
+                                strong.price ₹499.00
+                                .button-group.mt-2
+                                    button.btn.btn-primary Details
+                                    button.btn.btn-outline-secondary
+                                        i.mdi.mdi-heart.me-1
+                                        | Wishlist
+                    .item.col-md-3.mb-3
+                        .card
+                            img(src="assets/img/1.jpg", alt="").card-img-top
+                            .card-body
+                                a(href="productdetails.html").text-dark.d-block.text-decoration-none.text-truncate Name of Product Shown here
+                                strong.price ₹499.00
+                                .button-group.mt-2
+                                    button.btn.btn-primary Details
+                                    button.btn.btn-outline-secondary
+                                        i.mdi.mdi-heart.me-1
+                                        | Wishlist
+                    .item.col-md-3.mb-3
+                        .card
+                            img(src="assets/img/5.jpg", alt="").card-img-top
+                            .card-body
+                                a(href="productdetails.html").text-dark.d-block.text-decoration-none.text-truncate Name of Product Shown here
+                                strong.price ₹499.00
+                                .button-group.mt-2
+                                    button.btn.btn-primary Details
+                                    button.btn.btn-outline-secondary
+                                        i.mdi.mdi-heart.me-1
+                                        | Wishlist
+                    .item.col-md-3.mb-3
+                        .card
+                            img(src="assets/img/4.jpg", alt="").card-img-top
+                            .card-body
+                                a(href="productdetails.html").text-dark.d-block.text-decoration-none.text-truncate Name of Product Shown here
+                                strong.price ₹499.00
+                                .button-group.mt-2
+                                    button.btn.btn-primary Details
+                                    button.btn.btn-outline-secondary
+                                        i.mdi.mdi-heart.me-1
+                                        | Wishlist 

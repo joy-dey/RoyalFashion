@@ -1,0 +1,50 @@
+extend ../template/boilerplate
+block main
+    section.searchResults.py-4
+        .container
+            .searched-card.card
+                .card-body
+                    .row
+                        .col-md-3
+                            .image-wrapper.position-relative
+                                img.img-fluid(src="assets/img/1.jpg", alt="")
+                                span.badge.bg-danger.position-absolute.top-10.start-0 NEW
+                        .col-md-6.border-end
+                            .product-info
+                                a(href="#").h5.text-decoration-none.text-dark  Tripr Half Sleeve T-Shirt
+                                rating-wrapper.d-flex.align-items-center.mb-2
+                                    ul.list-unstyled.list-inline.rating-bar.mb-0.me-3
+                                        li.list-inline-item
+                                            i.mdi.mdi-star
+                                        li.list-inline-item
+                                            i.mdi.mdi-star
+                                        li.list-inline-item
+                                            i.mdi.mdi-star
+                                        li.list-inline-item
+                                            i.mdi.mdi-star
+                                        li.list-inline-item
+                                            i.mdi.mdi-star
+                                    
+                                    small.text-muted 12 Reviews
+                                    small.text-success.ms-2
+                                        i.mdi.mdi-clipboard-check.me-1
+                                        |25 Orders
+                                .tags-holder.mb-3
+                                    span.tag.text-muted 
+                                        i.mdi.mdi-check.me-1
+                                        | verified
+                                    span.tag.text-muted 100% Cotton
+                                    span.tag.text-muted Machine Washable
+                                    span.tag.text-muted Made in India
+                                p.product-desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia consequatur autem aut sit odio, labore eum, esse molestiae, incidunt iusto quaerat dolorum corporis ducimus numquam alias nostrum voluptatum totam.
+                        .col-md-3.align-self-center
+                            p.price.h4.text-center.mt-0
+                                strong ₹499.00
+                            span.text-success.d-block.text-center 
+                                i.mdi.mdi-check.me-1
+                                | Free Shipping
+                            .button-group.d-grid.gap-2.mt-3
+                                button.btn.btn-primary Details
+                                button.btn.btn-outline-secondary
+                                    i.mdi.mdi-heart.me-1
+                                    | Add to Wishlist
